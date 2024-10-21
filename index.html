@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(182, 13, 13);
+        }
+
+        .pomodoro-timer {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            color: rgb(182, 13, 13);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        #timer-display {
+            font-size: 60px;
+            margin: 20px 0;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            font-size: 20px;
+            color: white;
+            background-color: rgb(182, 13, 13);
+            border-radius: 7px;
+            border: 2px solid rgb(182, 13, 13);
+            margin: 10px;
+            border: none;
+        }
+
+        #reset-btn {
+            background-color: rgb(0, 197, 0);
+            border: none;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="pomodoro-timer">
+        <h1>Pomodoro Timer</h1>
+        <div id="timer-display">25:00</div>
+        <div class="buttons">
+            <button id="start-btn">Start</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+    </div>
+    <audio id="alert-sound" src="message-alert-190042.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
