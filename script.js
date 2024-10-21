@@ -1,5 +1,5 @@
 
-let so_phut = 0.1;
+let so_phut = 25;
 let timer;
 let isRunning = false;
 let timeLeft = so_phut * 60;
